@@ -30,7 +30,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var vBind: ActivityMainBinding
     private lateinit var tts: TextToSpeech
 
-    
+
+    @SuppressLint("MissingPermission")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         vBind = DataBindingUtil.setContentView(this, R.layout.activity_main)
